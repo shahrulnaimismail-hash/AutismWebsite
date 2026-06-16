@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Rumah Game Mesra Autism - Main & Belajar</title>
+    <link rel="stylesheet" href="C:\Users\HP\Documents\autism\style.css">
+</head>
+<body>
+    <!-- Background bergerak warna-warni -->
+    <div class="animated-bg"></div>
+
+    <div id="app">
+        <!-- LAMAN UTAMA -->
+        <div id="homePage" class="home-container">
+            <div class="hero">
+                <h1>🌈 Dunia Permainan Mesra Autism 🌈</h1>
+                <div class="kids-decoration">
+                    <span class="kid-emoji-small">🧸</span>
+                    <span class="kid-emoji-small">🎨</span>
+                    <span class="kid-emoji-small">🎵</span>
+                    <span class="kid-emoji-small">🧩</span>
+                    <span class="kid-emoji-small">🌸</span>
+                    <span class="kid-emoji-small">⭐</span>
+                </div>
+                <div class="welcome-message">
+                    🎉 Jom Kita Bermain 🎉
+                </div>
+            </div>
+            <div class="games-grid">
+                <div class="game-card" data-game="matchFruit">
+                    <div class="game-icon">
+                        <span>🍎</span>
+                        <span>🍌</span>
+                        <span>🍓</span>
+                    </div>
+                    <div class="game-title">Padankan Buah</div>
+                    <div class="game-desc">Klik gambar buah yang sama</div>
+                </div>
+                <div class="game-card" data-game="matchColor">
+                    <div class="game-icon">
+                        <span>🎨</span>
+                        <span>🔴</span>
+                        <span>🔵</span>
+                    </div>
+                    <div class="game-title">Kenali Warna</div>
+                    <div class="game-desc">Cari warna yang sama</div>
+                </div>
+                <div class="game-card" data-game="matchShape">
+                    <div class="game-icon">
+                        <span>🔵</span>
+                        <span>🔺</span>
+                        <span>⭐</span>
+                    </div>
+                    <div class="game-title">Bentuk Sama</div>
+                    <div class="game-desc">Temui bentuk yang serupa</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME BUAH -->
+        <div id="gameFruit" class="game-panel">
+            <div class="game-header">
+                <button class="back-home-btn">🏠 Kembali</button>
+                <div class="game-name">🍎 Padankan Buah</div>
+                <div class="game-score" id="fruitScore">⭐ 0</div>
+            </div>
+            <div class="game-area">
+                <div class="target-area">
+                    <div style="font-size:1.4rem; font-weight:500;">👉 Cari yang ini:</div>
+                    <div class="target-emoji" id="fruitTargetEmoji">🍎</div>
+                    <div id="fruitTargetName" style="font-weight:bold; margin-top:8px; font-size:1.25rem;">Epal</div>
+                </div>
+                <div id="fruitOptions" class="options-grid"></div>
+                <div id="fruitFeedback" class="feedback-msg">🍬 Klik pada buah yang sama</div>
+                <button id="fruitNextBtn" class="next-game-btn">Soalan seterusnya ➡️</button>
+            </div>
+        </div>
+
+        <!-- GAME WARNA -->
+        <div id="gameColor" class="game-panel">
+            <div class="game-header">
+                <button class="back-home-btn">🏠 Kembali</button>
+                <div class="game-name">🎨 Kenali Warna</div>
+                <div class="game-score" id="colorScore">⭐ 0</div>
+            </div>
+            <div class="game-area">
+                <div class="color-question">🖌️ Pilih warna yang SAMA</div>
+                <div id="colorSample" class="color-sample" style="background-color: #E34234;"></div>
+                <div id="colorOptions" class="colors-grid"></div>
+                <div id="colorFeedback" class="feedback-msg">🌈 Klik warna yang sama dengan kotak di atas</div>
+                <button id="colorNextBtn" class="next-game-btn">Soalan seterusnya ➡️</button>
+            </div>
+        </div>
+
+        <!-- GAME BENTUK -->
+        <div id="gameShape" class="game-panel">
+            <div class="game-header">
+                <button class="back-home-btn">🏠 Kembali</button>
+                <div class="game-name">🔷 Bentuk Sama</div>
+                <div class="game-score" id="shapeScore">⭐ 0</div>
+            </div>
+            <div class="game-area">
+                <div class="shape-question">📐 Cari bentuk yang SAMA</div>
+                <div class="shape-target-container">
+                    <div id="shapeTarget" class="shape-big">🔴</div>
+                </div>
+                <div id="shapeOptions" class="shapes-grid"></div>
+                <div id="shapeFeedback" class="feedback-msg">🧸 Klik bentuk yang serupa</div>
+                <button id="shapeNextBtn" class="next-game-btn">Soalan seterusnya ➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="C:\Users\HP\Documents\autism\main.js"></script>
+</body>
+</html>
